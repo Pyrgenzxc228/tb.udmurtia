@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px;">
+<h1>Добро пожаловать в систему TB Registry!</h1>
+<p>Вы успешно вошли в систему. Скоро здесь появится сводная таблица.</p>
+
+<!-- Кнопка выхода -->
+<form th:action="@{/logout}" method="post">
+    <button type="submit">Выйти из системы</button>
+</form>
+</body>
+</html>
