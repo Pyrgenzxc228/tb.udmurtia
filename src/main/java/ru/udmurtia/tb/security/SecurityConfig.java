@@ -22,7 +22,7 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/login", "/css/**", "/js/**").permitAll() // страница входа и стили доступны всем
+                        .requestMatchers("/login", "/error", "/css/**", "/js/**").permitAll() // страница входа и стили доступны всем
                         .anyRequest().authenticated() // все остальные страницы только для авторизованных
                 )
                 .formLogin(form -> form
